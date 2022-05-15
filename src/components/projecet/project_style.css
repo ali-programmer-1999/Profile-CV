@@ -1,0 +1,89 @@
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    opacity: 0;
+}
+
+.project-show{
+    transition: all 2.5s ease;
+    opacity: 1;
+}
+
+
+.project-logo{
+    font-size: 3.1rem;
+    width: 100%;
+    padding: 3rem 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+.content{
+    gap: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 0 20px rgb(42, 42, 42);
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.content::-webkit-scrollbar{
+    width: 0;
+}
+
+.contant-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: rgba(0, 0, 0, 0.277);
+    border-radius: 20px;
+    max-height: max-content;
+}
+
+.image-project{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.contant-item .text-box{
+    display: flex;
+    padding: 1rem 1.5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    font-family: 'Mulish', sans-serif;
+}
+
+.contant-item .text-box .text-logo{
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+}
+
+.contant-item .text-box .text-discription{
+    color: silver;
+    font-size: 1rem;
+}
+
+.contant-item .text-box a{
+    background-color: transparent;
+    border: 1px solid rgb(0, 68, 255);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: white;
+}
+
+.contant-item .text-box a:hover{
+    background: #000000; background: -moz-linear-gradient(to right,  #000000 0%,#0a1852 100%); background: -webkit-linear-gradient(to right,  #000000 0%,#0a1852 100%); background: linear-gradient(to right,  #000000 0%,#0a1852 100%);
+    transition: all 1s ease;
+}

@@ -1,0 +1,47 @@
+.navigation{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5rem;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    position: fixed;
+    left: -100%;
+    opacity: 0;
+    background: rgba(4, 121, 255, 0.341);
+    border-radius: 10px;
+    animation: shownav 2s forwards;
+}
+
+@keyframes shownav {
+    100%{
+        opacity: 1;
+        left: 2%;
+    }
+}
+
+.navigation a i{
+    font-size: 1.8rem;
+    padding: 0.7rem 0 0.5rem 0;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.navigation a i:hover{
+    background: rgba(178, 178, 178, 0.626);
+}
+
+.navigation a{
+    border-radius: 50%;
+    transition: all 0.3s;
+    color: white;
+}
+
+.navigation a.active{
+    background: black;
+}
